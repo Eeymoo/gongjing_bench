@@ -1,0 +1,16 @@
+{
+  "name": "gongjing_bench",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bash ./scripts/start.sh",
+    "finish": "bash ./scripts/finish.sh"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
