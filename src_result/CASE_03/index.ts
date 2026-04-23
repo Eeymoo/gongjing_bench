@@ -1,24 +1,17 @@
 /*
-CASE_03 特定排序算法标准实现 (严谨性)
-任务： 指定实现 快速排序 (Quick Sort) 或 归并排序 (Merge Sort)。
+CASE_03 动态多轨折返重排算法
+任务： 针对给定数组，与给定轨道数，首先将给定数组排序，在按照轨道数（如5）生成5个数组，5个数组依次从排序后数组取数，组成5个轨道数组，在依次从5个轨道数组中，取数组成新的数组需要注意的是，奇数轨道列从 0 到 length-1 取数, 偶数轨道列从 length-1 到 0 取数。
 
-公瑾审视： 测算其在处理"已排序数组"、"逆序数组"和"大量重复元素数组"时的耗时与稳定性。
+示例：
+输入 [1, 19, 13, 12, 16, 17, 2, 3, 4,6, 7, 9, 8, 18, 5, 15, 14, 10, 11, 20]
+排序 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+轨道数组 [1,6,11,16] [2,7,12,17] [3,8,13,18] [4,9,14,19] [5,10,15,20]
+输出 [1, 17, 3, 19, 5, 6, 12, 8, 14, 10, 11, 7, 13, 9, 15, 16, 2, 18, 4, 20]
 */
 
-export function quickSort<T>(arr: T[], compareFn?: (a: T, b: T) => number): T[];
 
-export function mergeSort<T>(arr: T[], compareFn?: (a: T, b: T) => number): T[];
-
-export function testSortPerformance<T>(
-  sortFn: (arr: T[], compareFn?: (a: T, b: T) => number) => T[],
-  testCases: {
-    sorted: T[];
-    reversed: T[];
-    duplicates: T[];
-  }
-): {
-  sortedTime: number;
-  reversedTime: number;
-  duplicatesTime: number;
-  isStable: boolean;
+export function sort(arr: number[], tracks: number): number[]{
+  const result: number[] = [];
+  // please implement this function according to the above description and example
+  return result;
 };

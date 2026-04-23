@@ -1,8 +1,8 @@
 /*
 CASE_02 登录注册后端安全接口 (JWT/Hash)
 任务： 使用 Node.js/Bun 编写 /register 和 /login 接口。
-
-公瑾审视： 严禁明文存储密码，必须使用 bcrypt 或 argon2；登录成功必须返回合规的 JWT。
+要求：
+1. 禁明文存储密码，必须使用 bcrypt 或 argon2；登录成功必须返回合规的 JWT。
 */
 import type { Server } from 'bun';
 import bcrypt from 'bcryptjs';
